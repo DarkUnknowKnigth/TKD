@@ -1,0 +1,20 @@
+.display {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.numberDisplay {
+    font-size: 2000% !important;
+    color: aliceblue;
+}
+
+.cardPerson {
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center !important;
+}
+
+.fighter {
+    color: aliceblue;
+    font-size: 150%;
+}

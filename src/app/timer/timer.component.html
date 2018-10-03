@@ -1,0 +1,53 @@
+<mat-card class="timer">
+    <mat-card-header>
+        <mat-card-title>
+            <b>Tiempo de combate</b>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-grid-list [cols]="4">
+            <mat-grid-tile>
+                <mat-card class="cardTime">
+                    <mat-card-header>
+                        <mat-card-title>
+                            minutos
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content style="font-size: 60px;">
+                        {{zerom+minutos}}
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class="cardTime">
+                    <mat-card-content style="font-size:60px;">
+                        :
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class="cardTime">
+                    <mat-card-header>
+                        <mat-card-title>
+                            segundos
+                        </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content style="font-size: 60px">
+                        {{zero+segundos}}
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-card class="cardTime">
+                    <mat-card-content>
+                        <mat-list>
+                            <button mat-button (click)="start()">Start</button>
+                            <button mat-button (click)="stop()">Stop</button>
+                            <button mat-button (click)="reset()">Reset</button>
+                        </mat-list>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card-content>
+</mat-card>

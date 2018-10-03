@@ -1,0 +1,22 @@
+<mat-grid-list [cols]="2">
+    <mat-grid-tile>
+        <mat-card style="background:red" class="cardPerson">
+            <mat-card-title>
+                <p class="fighter"><b>RED:</b>{{fighter_1}}</p>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="numberDisplay">{{redScore}}</p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card style="background:blue" class="cardPerson">
+            <mat-card-title>
+                <p class="fighter"><b>BLUE:</b>{{fighter_2}}</p>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="numberDisplay">{{blueScore}}</p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

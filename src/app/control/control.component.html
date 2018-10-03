@@ -1,0 +1,39 @@
+<mat-card class="control">
+    <mat-card-header>
+        <mat-card-title>
+            Marcador
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-grid-list [cols]="4">
+            <mat-grid-tile [colspan]="2">
+                <button mat-fab color="warn">1</button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="2">
+                <button mat-fab color="primary">1</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="warn">2</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="warn">3</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary">2</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button mat-fab color="primary">3</button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="2">
+                <button mat-fab color="warn">4</button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="2">
+                <button mat-fab color="primary">4</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button color="warn">Amonestacion</button>
+        <button mat-flat-button color="primary">Amonestacion</button>
+    </mat-card-actions>
+</mat-card>
